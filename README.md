@@ -1,1 +1,1 @@
-# Earth-Moon-deisgn-Html-and-Css-only-
+Earth-Moon system animation using html and css only
