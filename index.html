@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Earth-Moon</title>
+        <style>
+        @keyframes moon-round {
+          0%{
+              transform: rotate(0deg);
+          }
+          100%{
+              transform: rotate(360deg);
+          }
+            
+        }
+        @keyframes earth-animate{
+            0%{
+              transform: rotate(-360deg);
+          }
+          50%{
+              transform: rotate(180deg);
+          }
+          100%{
+              transform:rotate(360deg);
+          }
+        }
+           .main{
+               width:400px;
+               height:400px;
+               margin-top: 200px;
+               margin-left:200px;
+               border-radius:50%;
+               border:1px solid transparent;
+               border:1px dashed black;
+               animation-name: moon-round;
+               animation-duration: 5s;
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
+           }
+           .ring{
+               width:60px;
+               height:50px;
+               border-radius: 50%;
+               background-color:darkcyan;
+               margin-top:54px;
+               background-image: url(https://tse3.mm.bing.net/th?id=OIP.gbmXkA4Z9v-VyrEMBlJv0wHaE8&pid=Api&P=0&w=240&h=161);
+               background-repeat: no-repeat;
+               background-size: cover;
+           }
+           .earth{
+               position: absolute;
+               width:100px;
+               height:100px;
+               border-radius: 50%;
+               left:352px;
+               top:353px;
+               background-image: url(https://tse1.mm.bing.net/th?id=OIP.q6W9u2pZhf_fSnPRcptgmgHaHa&pid=Api&P=0&w=300&h=300);
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation-name: earth-animate;
+               animation-duration: 25s;
+               animation-timing-function: linear;
+               animation-iteration-count: infinite;
+               box-shadow:0px 0px 170px #4169e1;
+           }
+          
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="ring"></div>
+        </div>
+        
+        <div class="earth"></div>
+    </body>
+</html>
